@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function ImmigrationLawyerHome() {
+export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-lime-100 via-rose-100 to-sky-100 text-black font-sans">
       <Head>
@@ -62,7 +62,7 @@ export default function ImmigrationLawyerHome() {
       </main>
 
       <footer className="bg-gradient-to-r from-green-400 to-rose-200 text-white text-center py-6 mt-10">
-        <p className="text-lg">&copy; {new Date().getFullYear()} Ethlena Macauley, Esq. All rights reserved.</p>
+        <p className="text-lg">&copy; 2024 Ethlena Macauley, Esq. All rights reserved.</p>
         <p className="text-md mt-1">Bright, Bold, and Here for You — Always.</p>
       </footer>
     </div>
