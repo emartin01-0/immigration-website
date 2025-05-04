@@ -1,16 +1,11 @@
-import Head from "next/head";
+export const metadata = {
+  title: "Ethlena Macauley | Immigration Attorney",
+  description: "Compassionate and experienced immigration attorney offering personalized virtual legal services."
+};
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-lime-100 via-rose-100 to-sky-100 text-black font-sans">
-      <Head>
-        <title>Ethlena Macauley | Immigration Attorney</title>
-        <meta name="description" content="Compassionate and experienced immigration attorney offering personalized virtual legal services." />
-        <meta property="og:title" content="Ethlena Macauley | Immigration Attorney" />
-        <meta property="og:description" content="Compassionate and experienced immigration attorney offering personalized virtual legal services." />
-        <meta property="og:type" content="website" />
-      </Head>
-
       <nav className="bg-white shadow-md sticky top-0 z-50 p-4 flex justify-center gap-8 text-lg font-semibold text-green-900">
         <a href="#welcome" className="hover:underline">Welcome</a>
         <a href="#services" className="hover:underline">Services</a>
