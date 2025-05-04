@@ -1,7 +1,4 @@
 import Head from "next/head";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ImmigrationLawyerHome() {
   return (
@@ -27,7 +24,7 @@ export default function ImmigrationLawyerHome() {
         <p className="text-lg mt-2 italic">Proudly focusing on U.S. Immigration Law</p>
       </header>
 
-      <section id="welcome" className="p-8 grid md:grid-cols-1 gap-6 items-center bg-white bg-[url('/flowers.svg')] bg-cover bg-center">
+      <section id="welcome" className="p-8 grid md:grid-cols-1 gap-6 items-center bg-white bg-cover bg-center">
         <div>
           <h2 className="text-4xl font-bold mb-4 text-green-700">Welcome!</h2>
           <p className="text-xl leading-relaxed">
@@ -37,36 +34,30 @@ export default function ImmigrationLawyerHome() {
       </section>
 
       <main className="p-8 grid gap-6">
-        <section id="services">
-          <Card className="bg-orange-300 border-orange-500">
-            <CardContent className="p-6">
-              <h2 className="text-3xl font-bold mb-4 text-pink-800">Services Offered</h2>
-              <ul className="list-disc list-inside text-xl space-y-2">
-                <li>Green Card Applications</li>
-                <li>Naturalization & Citizenship</li>
-                <li>Family-Based Immigration</li>
-                <li>Employment-Based Immigration</li>
-                <li>Asylum & Deportation Defense</li>
-                <li>Freelance Legal Writing & Consulting</li>
-                <li>General Legal Guidance for Newcomers to the U.S.</li>
-              </ul>
-            </CardContent>
-          </Card>
+        <section id="services" className="bg-orange-300 border-orange-500 p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-pink-800">Services Offered</h2>
+          <ul className="list-disc list-inside text-xl space-y-2">
+            <li>Green Card Applications</li>
+            <li>Naturalization & Citizenship</li>
+            <li>Family-Based Immigration</li>
+            <li>Employment-Based Immigration</li>
+            <li>Asylum & Deportation Defense</li>
+            <li>Freelance Legal Writing & Consulting</li>
+            <li>General Legal Guidance for Newcomers to the U.S.</li>
+          </ul>
         </section>
 
-        <section id="about">
-          <Card className="bg-pink-200 border-pink-300 shadow-lg">
-            <CardContent className="p-6">
-              <h2 className="text-3xl font-bold mb-4 text-green-800">Why Work With Me?</h2>
-              <p className="text-xl leading-relaxed">
-                With a background in prosecution, legal aid, and civil litigation, I bring a balanced and compassionate approach to every case. I’ve served clients from all walks of life — and now I want to serve you, whether you're applying for a visa or fighting to stay with your family. My passion for justice is matched only by my commitment to people.
-              </p>
-            </CardContent>
-          </Card>
+        <section id="about" className="bg-pink-200 border-pink-300 shadow-lg p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-green-800">Why Work With Me?</h2>
+          <p className="text-xl leading-relaxed">
+            With a background in prosecution, legal aid, and civil litigation, I bring a balanced and compassionate approach to every case. I’ve served clients from all walks of life — and now I want to serve you, whether you're applying for a visa or fighting to stay with your family. My passion for justice is matched only by my commitment to people.
+          </p>
         </section>
 
         <section id="contact" className="text-center">
-          <Button className="bg-pink-600 hover:bg-pink-700 text-white text-lg">Schedule a Consultation</Button>
+          <button className="bg-pink-600 hover:bg-pink-700 text-white text-lg px-6 py-3 rounded">
+            Schedule a Consultation
+          </button>
         </section>
       </main>
 
